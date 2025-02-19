@@ -7,8 +7,6 @@ header {
     align-items: center;
 }
 
-
-
 #logo-cededica {
     width: 100px;
     margin-right: 15px;
@@ -16,6 +14,23 @@ header {
 
 h1 {
     color:white;
+    margin: 15px;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+#cad-num-mse {
+    width: 500px;
+}
+
+#cad-dt-inicio {
+    margin-left: 53px;
+}
+
+.h1-cad {
+    color:black;
 }
 
 #descricao-app {
@@ -43,7 +58,8 @@ h3 {
 }
 
 label {
-    margin: 5px;
+    margin: 10px;
+
 }
 
 #tabela-principal th:nth-child(2) {
@@ -61,4 +77,155 @@ label {
 
 #botao-busca {
     width: 30px;
+}
+
+#cad-tipo-infr {
+    width: 420px;
+}
+
+#cad-tempo-la {
+    width: 55px;
+    margin-left: 55px;
+    margin-right: 4px;
+}
+
+
+#cad-tempo-psc-totais {
+    width: 55px;
+    margin-left: 46px;
+    margin-right: 4px;
+}
+
+#cad-tempo-psc-semanais {
+    width: 55px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#campo-tempo-la {
+    display: none;
+}
+
+#campo-tempo-psc {
+    display: none;
+}
+
+#orientador {
+    margin-left: 69px;
+    width: 292px;
+}
+
+#sexo {
+    margin-left: 127px;
+}
+
+.form-cadastro {
+    border: 1px solid #c9d4cc;
+    border-radius: 15px;      /* Bordas arredondadas */
+    padding: 20px;           /* Espaçamento interno */
+    margin: 20px;     /* Espaçamento entre seções */
+}
+
+.form-login {
+    border: 1px solid #c9d4cc;
+    border-radius: 15px;      /* Bordas arredondadas */
+    padding: 20px;           /* Espaçamento interno */
+    margin: 20px;     /* Espaçamento entre seções */
+    width: 300px;
+}
+
+#campo-mse-finalizada {
+    display: none;
+}
+
+#campo-interrupcao {
+    display: none;
+}
+
+#mse-finalizada {
+    margin-left: 8px;
+}
+
+#tipo-mse {
+    margin-left: 63px;
+}
+
+#cad-dt-fim {
+    margin-left: 13px;
+}
+
+#tipo-finalizacao {
+    margin-left: 15px;
+    margin-right: 4px;
+}
+
+#tipo-interrupcao {
+    margin: 6px;
+}
+
+#cad-nome {
+    margin-left: 5px;
+    width: 550px;
+}
+
+#cad-nome-social {
+    margin-left: 75px;
+    width: 550px;
+}
+
+#list-sexo {
+    margin-left: 128px;
+    width: 255px;
+}
+
+#cad-cpf {
+    margin-left: 134px;
+}
+
+#cad-nome-mae {
+    margin-left: 61px;
+    width: 550px;
+}
+
+#cad-endereco {
+    margin-left: 92px;
+    width: 550px;
+}
+
+#cad-tel-alt {
+    margin-left: 19px;
+}
+
+#cad-dn {
+    margin-left: 13px;
+}
+
+#tem-ct {
+    margin: 5px;
+}
+
+#nome-ct {
+    width: 550px;
+}
+
+#campo-conselheiro {
+    display: none;
+}
+
+.submit-button {
+    margin: 15px;
+    display: flex;
+ 
+}
+
+#submit-button {
+    width: 100px;
+    background-color: rgb(0, 0, 102);
+    border-color: rgb(0, 0, 102);
+}
+
+.tela-login {
+    display: flex;
+    justify-content: center;
+    
 }
