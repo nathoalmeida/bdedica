@@ -10,60 +10,68 @@
 </head>
 <body>
     <h1 class="h1-cad">Editar MSE</h1>
-
-        
+  
         <form action="">
             <div class="form-cadastro">
                 <h2>Dados da MSE</h2>
-            <label for="num-MSE">Número do Processo:</label>
-            <input type="text" id="cad-num-mse" name="cad-num-mse" placeholder="Somente números">
-            <br>
-            <label for="cad-dt-inicio">Data de Início:</label>
-            <input type="date" id="cad-dt-inicio" name="cad-dt-inicio">
-            <br>
-            <label for="cad-tipo-mse">Tipo da MSE:</label>
-            <input type="checkbox" id="tipo-mse" name="tipo-mse-la" value="LA"> LA
-            <input type="checkbox" id="tipo-mse" name="tipo-mse-psc" value="PSC"> PSC
-            <br>
-            <label for="cad-tipo-infr">Ato infracional que gerou a MSE:</label>
-            <input type="text" id="cad-tipo-infr" name="cad-tipo-infr" placeholder="Digite o ato infracional">
-            <br>
-            <label for="cad-tempo-la">Tempo da LA:</label>
-            <input type="number" id="cad-tempo-la" name="cad-tempo-la" value="cad-tempo-la"> semanas.
-            <br>
-            <label for="cad-tempo-psc">Tempo da PSC:</label>
-            <input type="number" id="cad-tempo-psc-totais" name="cad-tempo-psc" value="cad-tempo-psc"> horas totais, na razão de 
-            <input type="number" id="cad-tempo-psc-semanais" name="cad-tempo-psc" value="cad-tempo-psc"> horas semanais.
-            <br>
-            <label for="nome-orientador">Orientador:</label>
-            <input list="nome-orientador" name="nome-orientador" id="orientador">
-            <datalist id="nome-orientador">
-                <option>Socorro</option>
-                <option>Fernando</option>
-                <option>Daniel</option>
-            </datalist>
-            <br>
-            <label for="mse-finalizada">A MSE foi finalizada?</label>
-            <input type="radio" id="mse-finalizada" name="mse-finalizada" value="false"> Sim
-            <input type="radio" id="mse-finalizada" name="mse-finalizada" value="false"> Não
-            <br>
-            <label for="cad-dt-fim">Data da finalização:</label>
-            <input type="date" id="cad-dt-fim" name="cad-dt-fim">
-            <br> <!--- MEXER AQUI NAS IDS -->
-            <label for="cad-dt-fim">A MSE foi:</label>
-            <input type="radio" id="tipo-finalizacao" name="tipo-finalizacao" value="true"> Concluída
-            <input type="radio" id="tipo-finalizacao" name="tipo-finalizacao" value="false"> Interrompida
-            <input type="radio" id="tipo-finalizacao" name="tipo-finalizacao" value="false"> Transferida
-            <input type="radio" id="tipo-finalizacao" name="tipo-finalizacao" value="false"> Regredida
-            <br>
-            <label for="tipo-interrupcao">Motivo da interrupção:</label>
-            <br>
-            <input type="radio" id="tipo-interrupcao" name="tipo-interrupcao"> Case
-            <br><input type="radio" id="tipo-interrupcao" name="tipo-interrupcao"> PRSM ou outra penitenciária
-            <br><input type="radio" id="tipo-interrupcao" name="tipo-interrupcao"> Desistência
-            <br><input type="radio" id="tipo-interrupcao" name="tipo-interrupcao"> Extinta pelo Judiciário (prescrição)
-            <br><input type="radio" id="tipo-interrupcao" name="tipo-interrupcao"> Idade
-            <br><input type="radio" id="tipo-interrupcao" name="tipo-interrupcao"> Revogada (não cumpre)
+                <label for="num-MSE">Número do Processo:</label>
+                <input type="text" id="cad-num-mse" name="cad-num-mse" placeholder="Somente números">
+                <br>
+                <label for="cad-dt-inicio">Data de Início:</label>
+                <input type="date" id="cad-dt-inicio" name="cad-dt-inicio">
+                <br>
+                <label for="cad-tipo-infr">Ato infracional que gerou a MSE:</label>
+                <input type="text" id="cad-tipo-infr" name="cad-tipo-infr" placeholder="Digite o ato infracional">
+                <br>
+                <label for="cad-tipo-mse">Tipo da MSE:</label>
+                <input type="checkbox" id="tipo-mse-la" name="tipo-mse-la" value="LA"> LA
+                <input type="checkbox" id="tipo-mse-psc" name="tipo-mse-psc" value="PSC"> PSC
+                <br>
+                    <div id="campo-tempo-la">
+                    <label for="cad-tempo-la">Tempo da LA:</label>
+                    <input type="number" id="cad-tempo-la" name="cad-tempo-la" value="cad-tempo-la"> semanas.
+                    <br>
+                    </div>
+                    <div id="campo-tempo-psc">
+                    <label for="cad-tempo-psc">Tempo da PSC:</label>
+                    <input type="number" id="cad-tempo-psc-totais" name="cad-tempo-psc" value="cad-tempo-psc"> horas totais, na razão de 
+                    <input type="number" id="cad-tempo-psc-semanais" name="cad-tempo-psc" value="cad-tempo-psc"> horas semanais.
+                    <br>
+                    </div>
+            
+                <label for="nome-orientador">Orientador:</label>
+                <select name="nome-orientador" id="nome-orientador">
+                    <option value="" disabled selected>Selecione um orientador</option>
+                    <option>Socorro</option>
+                    <option>Fernando</option>
+                    <option>Daniel</option>
+                </select>
+                <br>
+                <label for="mse-finalizada">A MSE foi finalizada?</label>
+                <input type="radio" id="mse-finalizada-s" name="mse-finalizada" value="false"> Sim
+                <input type="radio" id="mse-finalizada-n" name="mse-finalizada" value="false"> Não
+                <br>
+                <div id="campo-mse-finalizada">
+                    <label for="cad-dt-fim">Data da finalização:</label>
+                    <input type="date" id="cad-dt-fim" name="cad-dt-fim">
+                    <br>
+                    <label for="cad-dt-fim">A MSE foi:</label>
+                    <input type="radio" id="tipo-finalizacao-c" name="tipo-finalizacao" value="1"> Concluída
+                    <input type="radio" id="tipo-finalizacao-i" name="tipo-finalizacao" value="2"> Interrompida
+                    <input type="radio" id="tipo-finalizacao-t" name="tipo-finalizacao" value="3"> Transferida
+                    <input type="radio" id="tipo-finalizacao-r" name="tipo-finalizacao" value="4"> Regredida
+                    <br>
+                </div>
+                <div id="campo-interrupcao">
+                    <label for="tipo-interrupcao">Motivo da interrupção:</label>
+                    <br>
+                    <input type="radio" id="tipo-interrupcao" name="tipo-interrupcao"> Case
+                    <br><input type="radio" id="tipo-interrupcao" name="tipo-interrupcao"> PRSM ou outra penitenciária
+                    <br><input type="radio" id="tipo-interrupcao" name="tipo-interrupcao"> Desistência
+                    <br><input type="radio" id="tipo-interrupcao" name="tipo-interrupcao"> Extinta pelo Judiciário (prescrição)
+                    <br><input type="radio" id="tipo-interrupcao" name="tipo-interrupcao"> Idade
+                    <br><input type="radio" id="tipo-interrupcao" name="tipo-interrupcao"> Revogada (não cumpre)
+                </div>
             </div>
 
             <div class="form-cadastro">
@@ -75,12 +83,12 @@
             <input type="text" id="cad-nome-social" name="cad-nome" placeholder="Nome social (se houver)">
             <br>
             <label for="cad-dt-fim">Sexo:</label>
-            <input list="sexo" name="sexo" id="list-sexo">
-            <datalist id="sexo">
+            <select name="sexo" id="sexo">
+                <option value="" disabled selected>Selecione o sexo</option>
                 <option>Feminino</option>
                 <option>Masculino</option>
                 <option>Outro</option>
-            </datalist>
+            </select>
             <br>
             <label for="cad-cpf">CPF:</label>
             <input type="text" id="cad-cpf" name="cad-cpf" placeholder="Somente números">
@@ -101,19 +109,22 @@
             <input type="date" id="cad-dn" name="cad-dn">
             <br>
             <label for="tem-ct">Tem Conselheiro(a) Tutelar?</label>
-            <input type="radio" id="tem-ct-s" name="tem-ct"> Sim
-            <input type="radio" id="tem-ct-n" name="tem-ct"> Não
+            <input type="radio" id="tem-ct-s" name="tem-ct" value="sim"> Sim
+            <input type="radio" id="tem-ct-n" name="tem-ct" value="nao"> Não
             <br>
+            <div id="campo-conselheiro">
             <label for="nome-ct">Nome do(a) conselheiro(a):</label>
             <input type="text" id="nome-ct" name="nome-ct" placeholder="Nome do(a) conselheiro(a)">
-            <div class="submit-button">
-                <button type="submit" class="btn btn-primary" id="submit-button">Enviar</button>
             </div>
-            
-        </div>
+            <div class="submit-button">
+                <button type="submit" class="btn btn-primary" id="submit-button">Salvar</button>
+                <button type="submit" class="btn btn-danger" id="cancel-button">Cancelar</button>
+            </div>   
+                
         
+        </div>
         </form>
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>

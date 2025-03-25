@@ -33,9 +33,6 @@ h2 {
     color:black;
 }
 
-#descricao-app {
-    font-size: medium;
-}
 h3 {
     color: white;
 }
@@ -215,6 +212,7 @@ label {
 .submit-button {
     margin: 15px;
     display: flex;
+    gap: 15px;
  
 }
 
